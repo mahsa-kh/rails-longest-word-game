@@ -17,6 +17,11 @@ h2 {
   color: white;
   }
 
+  h3 {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: lighter;
+  }
+
 .letContainer {
   display: flex;
   flex-direction: row;
@@ -33,4 +38,35 @@ h2 {
   text-align: center;
   height: 50px;
   align-content: center;
+}
+
+
+.answerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.res {
+  background-color: #005082;
+  border-radius: 5px;
+  margin: 8px;
+  width: 1500px;
+  text-align: center;
+  height: 150px;
+  align-content: center;
+  h1 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: bold;
+    color: white;
+  }
+
+}
+
+.answer {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

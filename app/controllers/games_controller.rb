@@ -47,7 +47,7 @@ def run_game(attempt, grid, start_time, end_time)
       score: 0,
       message: "These letters are not valid!"
     }
-  @result[:time] = (end_time - start_time) / 1200
+  @result[:time] = (end_time - start_time) / 12000
 
   if match_grid?(attempt.upcase, grid)
     if api_valid_word?(attempt)

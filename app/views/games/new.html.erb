@@ -10,11 +10,11 @@
   <% @start_time = Time.now %>
 <div>
   <form action="/score" method="post">
-    <label for="word">What is the longest word you can find?</label><br>
-    <input type="text" name="word"><br>
+    <h3><label for="word">What is the longest word you can find?</label></h3><label><br>
+    <input type="text" name="word" class="answer"><br>
     <input id="token" name="time" type="hidden" value="<%= @start_time%>" />
     <input id="token" name="quizletters" type="hidden" value="<%= @letters%>" />
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-    <button type="submit" value="Submit">play</button>
+    <button type="submit" value="Submit"><h3>play</h3></button>
 </form>
 </div>
