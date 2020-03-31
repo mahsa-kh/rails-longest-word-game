@@ -1,0 +1,20 @@
+<h1>New Game</h1>
+
+<div class="letContainer">
+  <% @letters.each do |let|%>
+    <div class="letter">
+      <h2><%= let %></h2>
+    </div>
+  <% end %>
+</div>
+  <% @start_time = Time.now %>
+<div>
+  <form action="/score" method="post">
+    <label for="word">What is the longest word you can find?</label><br>
+    <input type="text" name="word"><br>
+    <input id="token" name="time" type="hidden" value="<%= @start_time%>" />
+    <input id="token" name="quizletters" type="hidden" value="<%= @letters%>" />
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <button type="submit" value="Submit">play</button>
+</form>
+</div>

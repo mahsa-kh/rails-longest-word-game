@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;600;700&display=swap');
+
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+h1 {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: bold;
+  }
+
+h2 {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: lighter;
+  color: white;
+  }
+
+.letContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.letter{
+  background-color: #005082;
+  border-radius: 5px;
+  margin: 8px;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  align-content: center;
+}
